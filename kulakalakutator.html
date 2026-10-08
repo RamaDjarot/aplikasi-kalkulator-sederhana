@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <title>Kalkulator Sederhana dengan Riwayat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kalkulator">
+        <div class="layar-container">
+            <div class="riwayat" id="riwayat"></div>
+            <div class="layar" id="layar">0</div>
+        </div>
+
+        <div class="tombol-grid">
+            <button onclick="tambahAngka('7')">7</button>
+            <button onclick="tambahAngka('8')">8</button>
+            <button onclick="tambahAngka('9')">9</button>
+            <button class="operator" onclick="pilihOperator('/')">÷</button>
+            
+            <button onclick="tambahAngka('4')">4</button>
+            <button onclick="tambahAngka('5')">5</button>
+            <button onclick="tambahAngka('6')">6</button>
+            <button class="operator" onclick="pilihOperator('*')">×</button>
+            
+            <button onclick="tambahAngka('1')">1</button>
+            <button onclick="tambahAngka('2')">2</button>
+            <button onclick="tambahAngka('3')">3</button>
+            <button class="operator" onclick="pilihOperator('-')">-</button>
+            
+            <button class="operator" onclick="hapusLayar()">C</button>
+            <button onclick="tambahAngka('0')">0</button>
+            <button class="sama-dengan" onclick="hitung()">=</button>
+            <button class="operator" onclick="pilihOperator('+')">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
